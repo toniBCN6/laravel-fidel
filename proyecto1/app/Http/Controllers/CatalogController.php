@@ -12,12 +12,12 @@ class CatalogController extends Controller
 
     public function getIndex(){
         $peliculas=Movie::all();
-        return view('catalog.index', array('arrayPeliculas'=>$this->peliculas));
+        return view('catalog.index', array('arrayPeliculas'=>$peliculas));
     }
 
     public function getShow($id){
         $peliculas=Movie::all();
-        return view('catalog.show', array('pelicula'=>$this->peliculas[$id]));
+        return view('catalog.show', array('pelicula'=>$peliculas[$id]));
     }
 
     public function getCreate(){
