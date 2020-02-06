@@ -6,13 +6,10 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateMoviesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+
     public function up()
     {
+
         Schema::create('movies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
@@ -23,15 +20,14 @@ class CreateMoviesTable extends Migration
             $table->text('synopsis');
             $table->timestamps();
         });
+
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
+
         Schema::dropIfExists('movies');
+
     }
 }
