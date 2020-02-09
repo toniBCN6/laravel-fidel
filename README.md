@@ -14,4 +14,4 @@ Laravel es un marco de aplicación web con sintaxis expresiva y elegante. Creemo
 
 ## Progreso
 
-Punto actual: Capitulo 5 - Ejercicio 1
+Finalizado
