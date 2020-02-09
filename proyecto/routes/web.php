@@ -13,6 +13,12 @@
 
 Route::get('/', 'HomeController@getHome');
 
+Route::post('catalog/create', 'CatalogController@create');
+
+Route::get('logout', 'Auth\LoginController@logout');
+
+Route::get('reset', 'Auth\LoginController@passwordReset');
+
 Route::get('login', function () {
     return view('auth.login');
 });
@@ -21,6 +27,16 @@ Route::get('catalog', 'CatalogController@getIndex');
 
 Route::get('catalog/show/{key}', 'CatalogController@getShow');
 
+Route::get('/edit/catalog/show/{key}', 'CatalogController@getEdit');
+
+Route::post('catalog/editar/{id}', 'CatalogController@PostEdit');
+
+Route::post('catalog/rent/{id}', 'CatalogController@putRent');
+
+Route::post('catalog/unrent/{id}', 'CatalogController@putReturn');
+
 Route::get('catalog/create', 'CatalogController@getCreate');
 
-Route::get('catalog/edit/{id}', 'CatalogController@getEdit');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

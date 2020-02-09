@@ -15,9 +15,9 @@
 
     <title>IAW-FIDEL</title>
   </head>
-  <body style="background-image: url(https://w.wallhaven.cc/full/4y/wallhaven-4y65k0.png); background-size:cover; background-repeat:no-repeat; height:100%;">
+  <body style="background-image: url(https://w.wallhaven.cc/full/4y/wallhaven-4y65k0.png); background-size:cover; background-repeat:no-repeat; min-height:755px;">
     @include('partials.navbar')
-    <div style="height:100%" class="container ">
+    <div style=" min-height:755px" class="container">
         @yield('content')
     </div>
     @include('partials.footer')
@@ -27,4 +27,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+  
 </html>

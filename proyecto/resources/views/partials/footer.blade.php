@@ -1,6 +1,6 @@
 <!-- Footer -->
 
-<footer style="background-color: #212121; bottom:0px; left:0px; right:0px; margin-top: auto;" class="page-footer font-small mt-5 pt-4">
+<footer style="background-color: #212121; bottom:0px; left:0px; right:0px;" class="page-footer font-small mt-5 pt-4">
 
   <!-- Footer Elements -->
   <div class="container text-white">
